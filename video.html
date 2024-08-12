@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Vídeo - Lenguaje de Marcas - Jose Antonio del Pino Muñoz </title>
+    <meta name="description" content="Práctica Web para Lenguaje de Marcas. Website de temática automóvil, 
+    concretamente sobre el modelo Ferrari LaFerrai">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/iconos/logoFerrari.ico">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="css/video.css">
+    <!-- Tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"rel="stylesheet"/>
+</head>
+<body>
+    <!-- Parte Superior -->
+
+    <div class="imagen-superior-box">
+        <img class="imagen-superior" src="img/rear.png" alt="Coche Ferrari LaFerrari parte trasera">
+    </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="img/Asset 4.png" alt="Logo Ferrari" /></a>
+            </div>
+            
+            <ul class="nav-enlaces">
+                <li class="enlace"><a  href="formulario.html">CONTACTO</a></li>
+                <li class="enlace"><a  href="">VÍDEO</a></li>
+                <li class="enlace"><a href="galeria.html" >GALERIA</a></li>
+            </ul>
+            <div class="socials-box">
+                <a href="https://twitter.com/ScuderiaFerrari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="icono-social" src="img/Socials/tw.svg" alt="Logo Twitter"></a>
+                <a href="https://www.youtube.com/@Ferrari"><img class="icono-social"src="img/Socials/yt.svg" alt="Logo Youtube"></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Contenido -->
+    <span .titulo-Web>Vídeo</span>
+    <div class="contenedor-video">
+        <!-- Hay que añadir muted para que el navegador ejecute autoplay -->
+        <video  width="1280" height="720" autoplay muted controls>
+            <source src="img/video.mp4" type="video/mp4">
+        </video> 
+    </div>
+
+    <div class="contenedor-iframe"> 
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/C_E3bSFi8lI?si=f8PQYbFMjjlxCCZ2" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>@Author: Jose Antonio del Pino Muñoz</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>

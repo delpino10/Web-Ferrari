@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Contacto - Lenguaje de Marcas - Jose Antonio del Pino Muñoz </title>
+    <meta name="description" content="Práctica Web para Lenguaje de Marcas. Website de temática automóvil, 
+    concretamente sobre el modelo Ferrari LaFerrai">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/iconos/logoFerrari.ico">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/EstructuraPrincipal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <!-- Tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"rel="stylesheet"/>
+</head>
+<body>
+    <!-- Parte Superior -->
+
+    <div class="imagen-superior-box">
+        <img class="imagen-superior" src="img/rear.png" alt="Coche Ferrari LaFerrari parte trasera">
+    </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="img/Asset 4.png" alt="Logo Ferrari Blanco" /></a>
+            </div>
+            
+            <ul class="nav-enlaces">
+                <li class="enlace"><a  href="formulario.html">CONTACTO</a></li>
+                <li class="enlace"><a  href="video.html">VÍDEO</a></li>
+                <li class="enlace"><a href="galeria.html" >GALERIA</a></li>
+            </ul>
+            <div class="socials-box">
+                <a href="https://twitter.com/ScuderiaFerrari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="icono-social" src="img/Socials/tw.svg" alt="Logo Twitter"></a>
+                <a href="https://www.youtube.com/@Ferrari"><img class="icono-social"src="img/Socials/yt.svg" alt="Logo Youtube"></a>
+            </div>
+        </nav>
+    </div>
+
+   <!-- Contenido -->
+    <span .titulo-Web>Contacto</span>
+    
+    <div class="contenedor">
+        <div class="contenedor-formulario">
+            <form action="" method="get">
+                <div class="input-text">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" maxlength="30" size="30" placeholder="Nombre" />
+                </div>
+                <div class="input-text">
+                    <label for="email"></label>
+                    <!-- Un elemento "input" con type=email" debe estar en el siguiente orden: caracteres@caracteres.domain (caracteres
+                    seguido de un signo @, seguido de más caracteres, y luego un ".".Después del signo de ".", añadir al menos 2 letras de a a la z: -->
+                    <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="30" required placeholder="Email"/>
+                </div>
+                <div class="desplegable">
+                    <label for="opt-mensaje">Elige una acción:</label>
+                    <select  id="opt-mensaje">
+                    <optgroup>
+                        <option>Aviso de error</option>
+                        <option>Sugerencia</option>
+                        <option>Pregunta</option>
+                    </optgroup>
+                </div>
+                <div class="textarea">
+                    <textarea id="comentario" name="comentario" rows="5" cols="30" placeholder="Comente aquí..."></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" />
+                    <label>Acepto el tratamiento de datos personales</label>
+                </div>
+                <div class="btn-formulario">
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>@Author: Jose Antonio del Pino Muñoz</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>

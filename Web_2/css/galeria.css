@@ -1,0 +1,76 @@
+:root{
+    --max-width-full:max-width;;
+    --ffamily-titulo-principal: 'Playfair Display', sans-serif;
+    --color-principal:#fff;
+    --border: #ffd700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: var(--max-width-full);
+    position: relative;
+}
+
+/* span{
+    display: block;
+    margin: 2em;
+    padding-left: 0.25em;
+    color: var(--color-principal);
+    font-family: var(--ffamily-titulo-principal);
+    font-weight: 700;
+    font-size: 4em;
+    text-transform: uppercase;
+    border-left: 0.1em solid var(--border);
+} */
+
+
+.contenedor-galeria{
+    max-width: var(--max-width-contenedor);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0em;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 0em) {
+    .contenedor-galeria{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.75em;
+    }
+    
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    .contenedor-galeria{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0; 
+    }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+    .contenedor-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+    .contenedor-galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
