@@ -18,6 +18,8 @@ img{
 .contenedor{
     max-width: var(--max-width-full);
     position: relative;
+    background: #000
+    ;
 }
 
 /* span{
